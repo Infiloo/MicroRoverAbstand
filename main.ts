@@ -7,7 +7,7 @@ Rover.setBrightness(255)
 basic.showString("Hallo Delfine")
 basic.forever(function () {
     Rover.Move(100)
-    if (Rover.Ultrasonic() <= 70) {
+    if (Rover.Ultrasonic() <= 50) {
         Rover.MotorRunDual(-100, -100)
         basic.pause(100)
         Rover.MotorRunDual(-200, 200)
